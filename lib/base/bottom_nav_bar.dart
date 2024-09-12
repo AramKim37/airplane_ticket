@@ -1,3 +1,4 @@
+import 'package:airplane_ticket/base/res/styles/app_styles.dart';
 import 'package:airplane_ticket/screens/home_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
@@ -36,9 +37,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("My tickets"),
-      ),
+      // appBar: AppBar(
+      //   // title: const Text("My tickets"),
+      //   backgroundColor: AppStyles.bgColor,
+      // ),
       body: appScreen[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
