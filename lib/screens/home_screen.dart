@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../base/res/styles/app_styles.dart';
+import '../base/widgets/add_double_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -83,6 +84,13 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                AppDoubleText(
+                  bigText: "Upcoming Flights",
+                  smallText: "View All",
                 ),
               ],
             ),
