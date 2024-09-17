@@ -30,4 +30,9 @@ class AppStyles {
     fontSize: 21,
     fontWeight: FontWeight.bold,
   );
+  static TextStyle headLineStyle4 = TextStyle(
+    color: text,
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+  );
 }
