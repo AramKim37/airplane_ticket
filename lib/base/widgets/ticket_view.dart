@@ -139,37 +139,9 @@ class TicketView extends StatelessWidget {
                       ),
                       AppColumnTextLayout(
                         topText: "23",
-                        bottomText: "Date",
+                        bottomText: "Number",
                         alignment: CrossAxisAlignment.end,
                       ),
-                      //     Expanded(
-                      //       child: Container(),
-                      //     ),
-                      //     TextStyleThird(text: "08:00 AM"),
-                      //     Expanded(
-                      //       child: Container(),
-                      //     ),
-                      //     TextStyleThird(text: "23"),
-                      //   ],
-                      // ),
-                      // SizedBox(
-                      //   height: 3,
-                      // ),
-                      // Row(
-                      //   children: [
-                      //     TextStyleFourth(text: "Date"),
-                      //     Expanded(
-                      //       child: Container(),
-                      //     ),
-                      //     TextStyleFourth(
-
-                      //       text: "Departure time",
-                      //       align: TextAlign.end,
-                      //     ),
-                      //     Expanded(
-                      //       child: Container(),
-                      //     ),
-                      //     TextStyleFourth(text: "Number"),
                     ],
                   ),
                 ],
