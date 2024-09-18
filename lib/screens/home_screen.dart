@@ -6,6 +6,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../base/res/styles/app_styles.dart';
+import '../base/utils/all_json.dart';
 import '../base/widgets/add_double_text.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -96,7 +97,17 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                TicketView(),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: ticketList
+                        .take(2) //화면에 2개의 티켓만 나오도록 한다.지우면 모든 리스트의 목록이 나온다.
+                        .map((singleTicket) => TicketView(
+                              ticket: singleTicket,
+                            ))
+                        .toList(),
+                  ),
+                ),
               ],
             ),
           ),
