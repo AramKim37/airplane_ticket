@@ -1,3 +1,5 @@
+import 'package:airplane_ticket/base/widgets/ticket_view.dart';
+import 'package:airplane_ticket/screens/all_tickets.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -5,15 +7,6 @@ import 'base/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
-  var test = TestClass(x: 2, y: 3);
-  print(test.x);
-}
-
-class TestClass {
-  late int x;
-  late int y;
-
-  TestClass({required this.x, required this.y});
 }
 
 class MyApp extends StatelessWidget {
@@ -25,6 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: BottomNavBar(),
+      routes: {
+        "all_tickets": (context) => const AllTickets(),
+      },
     );
   }
 }

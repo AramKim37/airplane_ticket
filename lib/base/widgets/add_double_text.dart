@@ -1,4 +1,5 @@
 import 'package:airplane_ticket/base/res/styles/app_styles.dart';
+import 'package:airplane_ticket/screens/all_tickets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -19,7 +20,7 @@ class AppDoubleText extends StatelessWidget {
           style: AppStyles.headLineStyle3,
         ),
         InkWell(
-          onTap: () => {},
+          onTap: () => {Navigator.pushNamed(context, "all_tickets")},
           child: Text(
             smallText,
             style: AppStyles.headLineStyle.copyWith(

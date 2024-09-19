@@ -101,7 +101,7 @@ class HomeScreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: ticketList
-                        .take(2) //화면에 2개의 티켓만 나오도록 한다.지우면 모든 리스트의 목록이 나온다.
+                        .take(4) //화면에 2개의 티켓만 나오도록 한다.지우면 모든 리스트의 목록이 나온다.
                         .map((singleTicket) => TicketView(
                               ticket: singleTicket,
                             ))
