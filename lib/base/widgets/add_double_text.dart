@@ -6,9 +6,13 @@ import 'package:flutter/src/widgets/framework.dart';
 
 class AppDoubleText extends StatelessWidget {
   const AppDoubleText(
-      {super.key, required this.bigText, required this.smallText});
+      {super.key,
+      required this.bigText,
+      required this.smallText,
+      required this.func});
   final String bigText;
   final String smallText;
+  final VoidCallback func;
 
   @override
   Widget build(BuildContext context) {

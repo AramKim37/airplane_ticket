@@ -1,5 +1,6 @@
 import 'package:airplane_ticket/base/res/media.dart';
 import 'package:airplane_ticket/base/widgets/ticket_view.dart';
+import 'package:airplane_ticket/screens/widgets/hotels.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -28,6 +29,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -93,6 +95,7 @@ class HomeScreen extends StatelessWidget {
                 AppDoubleText(
                   bigText: "Upcoming Flights",
                   smallText: "View All",
+                  func: () => {Navigator.pushNamed(context, "all_tickets")},
                 ),
                 const SizedBox(
                   height: 20,
@@ -108,6 +111,27 @@ class HomeScreen extends StatelessWidget {
                         .toList(),
                   ),
                 ),
+                const SizedBox(
+                  height: 40,
+                ),
+                AppDoubleText(
+                  bigText: "Hotels",
+                  smallText: "View All",
+                  func: () => {Navigator.pushNamed(context, "all_tickets")},
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        Hotel(),
+                        Hotel(),
+                        Hotel(),
+                        Hotel(),
+                      ],
+                    ))
               ],
             ),
           ),
