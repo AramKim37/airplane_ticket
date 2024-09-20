@@ -123,15 +123,16 @@ class HomeScreen extends StatelessWidget {
                   height: 20,
                 ),
                 SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        Hotel(),
-                        Hotel(),
-                        Hotel(),
-                        Hotel(),
-                      ],
-                    ))
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: hotelList
+                        .take(2) //화면에 2개의 티켓만 나오도록 한다.지우면 모든 리스트의 목록이 나온다.
+                        .map(
+                          (singleHotel) => (Hotel(hotel: singleHotel)),
+                        )
+                        .toList(),
+                  ),
+                )
               ],
             ),
           ),
