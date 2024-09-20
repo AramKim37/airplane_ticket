@@ -1,5 +1,5 @@
 import 'package:airplane_ticket/base/res/styles/app_styles.dart';
-import 'package:airplane_ticket/screens/all_tickets.dart';
+import 'package:airplane_ticket/screens/home/all_tickets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';

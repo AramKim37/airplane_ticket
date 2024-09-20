@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import '../base/utils/all_json.dart';
+import '../../base/utils/all_json.dart';
 
 class AllTickets extends StatelessWidget {
   const AllTickets({super.key});
